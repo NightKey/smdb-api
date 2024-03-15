@@ -1,6 +1,6 @@
 # Server monitoring Discord bot API
 
-This API can be used to interface with the [Server Monitoring Discord Bot](#https://github.com/NightKey/Server-monitoring-discord-bot) only if the API is enabled on it. For this, the bot needs to run on the same PC, or the API needs to be set up to allow outside connections.
+This API can be used to interface with the [Server Monitoring Discord Bot](https://github.com/NightKey/Server-monitoring-discord-bot) only if the API is enabled on it. For this, the bot needs to run on the same PC, or the API needs to be set up to allow outside connections.
 
 ## Usage
 
