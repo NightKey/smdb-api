@@ -1,0 +1,13 @@
+OPENED AT 2021-09-20 14:14:18.173970
+14:14:18.176002 - API Server started
+14:14:18.184970 - Incoming connection from 127.0.0.1:49446
+14:14:18.186974 - Adding Test to the connections
+14:14:18.687538 - Incoming message from Test
+14:14:18.799457 - Incoming message from Test
+14:14:18.915460 - Incoming message from Test
+14:14:19.129458 - Incoming message from Test
+14:14:19.351456 - Incoming message from Test
+14:14:19.573457 - Incoming message from Test
+14:14:19.574458 - Creating function with the name Test
+14:14:19.574458 - Creating function with the call back Test
+14:14:19.574458 - Creating function with the creator as Test
