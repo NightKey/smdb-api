@@ -1,6 +1,4 @@
-.backup
-logs*
-data/*.cfg
+*logs*
 *.json
 *__py*
 *.last
@@ -8,6 +6,4 @@ data/*.cfg
 *build*
 *egg-info*
 *folder
-*level
-*update.lg
 *.log
