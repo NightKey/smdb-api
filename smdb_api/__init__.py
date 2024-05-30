@@ -9,19 +9,19 @@ from os import path, devnull, system, remove
 from sys import stdout, __stdout__
 from time import sleep, time
 from datetime import datetime
-from typing import Any, Callable, Dict, List, Union, Optional
+from typing import Callable, Dict, List, Union
 from hashlib import sha256
 from enum import Enum
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
-from requests.models import Response
+from requests.models import Response as reREsponse
 
 class JsonSerializable(ABC):
     @staticmethod
     def from_json(json_string: str) -> "JsonSerializable":
         pass
 
-    @abstractclassmethod
+    @abstractmethod
     def to_json(self) -> str:
         pass
 
@@ -71,7 +71,7 @@ class Attachment(JsonSerializable):
     def size(self) -> int:
         return self.size
 
-    def download(self) -> Response:
+    def download(self) -> reREsponse:
         import requests
         return requests.get(self.url)
 
