@@ -562,7 +562,7 @@ class API:
                 self.created_function_list.append([name, help_text, callback, privilege, show_button, needs_arguments])
             if not self.valid:
                 return
-            self.__send(Message(self.name, json.dumps({"name": name, "help":help_text, "privilege":privilege, "show_button": show_button, "needs_arguments":needs_arguments}), None, [], "Create"))
+            self.__send(Message(self.name, json.dumps({"name": name, "help":help_text, "privilege":privilege.value, "show_button": show_button, "needs_arguments":needs_arguments}), None, [], "Create"))
             tmp = self.__wait_for_response()
             self.sending = False
             if tmp.response_code == ResponseCode.Success:
