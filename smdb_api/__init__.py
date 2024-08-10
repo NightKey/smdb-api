@@ -416,6 +416,7 @@ class API:
         Timeout can be set, so it won't halt the program for ever, if no bot is present. (The timeout will only work for the first validation.)
         If the timeout is set to -1, the validation will be in a new thread, and always return true.
         """
+        if self.valid: return
         if timeout is not None and timeout == -1:
             tmp = threading.Thread(target=self.__validate)
             tmp.name = "Validation"
