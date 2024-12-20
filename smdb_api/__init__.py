@@ -544,7 +544,7 @@ class API:
         self.sending = False
         self.socket.close()
 
-    def create_function(self, name: str, help_text: str, callback: Callable[[Message], None], privilege: Privilege = None, show_button: bool = False, needs_arguments: bool = False) -> None:
+    def create_function(self, name: str, help_text: str, callback: Callable[[Message], None], privilege: Privilege = Privilege.Anyone, show_button: bool = False, needs_arguments: bool = False) -> None:
         """Creates a function in the connected bot. This function creates a thread so it won't block while it waits for validation from the bot.
         Returns a Message object. The returned value depends on the return value, but the order is the same.
         """
