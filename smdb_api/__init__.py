@@ -2,7 +2,6 @@ import select
 import socket
 import json
 import threading
-import discord
 import re
 import pickle
 from os import path, devnull, system, remove
@@ -55,11 +54,6 @@ class Attachment(JsonSerializable):
         if data is None:
             return None
         return Attachment(data["filename"], data["url"], data["size"])
-
-    def from_discord_attachment(atch: discord.Attachment):
-        if atch is None:
-            return None
-        return Attachment(atch.filename, atch.url, atch.size)
 
     def __init__(self, filename: str, url: str, size: int) -> None:
         if not isinstance(size, int):
